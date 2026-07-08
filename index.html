@@ -2,66 +2,49 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimi Project</title>
-    <!-- استيراد خط "Cairo" العربي الجميل من جوجل -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #fcfcfc;
-            color: #333;
+            font-family: 'Amiri', serif;
+            /* إضافة نقش هندسي كخلفية (يمكنك تغيير الرابط لصورة نقش تفضلها) */
+            background-color: #f4eadd;
+            background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            padding: 20px;
         }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem;
+        .frame {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+            /* إطار مزدوج لإعطاء طابع زخرفي */
+            border: 10px double #8b4513; 
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
             text-align: center;
-            border-bottom: 5px solid #d4af37; /* لون ذهبي للزخرفة */
+        }
+        h1 {
+            color: #8b4513;
+            border-bottom: 2px solid #8b4513;
+            display: inline-block;
+            padding-bottom: 10px;
         }
         .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border: 1px solid #eee;
-        }
-        h2 {
-            color: #2c3e50;
-            border-right: 4px solid #d4af37;
-            padding-right: 10px;
-        }
-        .btn {
-            display: inline-block;
-            background: #d4af37;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+            font-size: 1.4rem;
+            color: #4a3728;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Kimi Project</h1>
-        <p>مرحباً بك في منصتي العلمية والتعليمية</p>
-    </header>
-
-    <div class="content">
-        <h2>مرحباً بكم</h2>
-        <p>هذا الموقع مخصص لنشر البحوث العلمية، المحاضرات، والدروس التعليمية. نسعى لتقديم المحتوى بأسلوب راقٍ ومميز.</p>
-        
-        <h2>أحدث المقالات</h2>
-        <p>قريباً سيتم إضافة المقالات هنا. نحن نعمل على تجهيز المحتوى ليكون مفيداً للجميع.</p>
-        
-        <a href="#" class="btn">تصفح المحاضرات</a>
+    <div class="frame">
+        <h1>مشروع كيمي</h1>
+        <div class="content">
+            <p>بـسـم الله الـرحـمـن الـرحـيـم</p>
+            <p>أهلاً بكم في رحاب موقعنا العلمي، حيث نجمع بين الأصالة والمعرفة.</p>
+            <p>هنا ستجدون بحوثاً ومحاضرات مُنتقاة بعناية.</p>
+        </div>
     </div>
 
 </body>
