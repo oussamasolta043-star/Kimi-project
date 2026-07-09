@@ -8,39 +8,57 @@
         body {
             font-family: 'Amiri', serif;
             margin: 0;
-            padding: 40px;
-            /* تطبيق الصورة كخلفية */
-            background-image: url('background-frame.jpg'); /* تأكد من اسم الصورة ومكانها */
-            background-size: 100% 100%; /* تجعل الصورة تغطي كامل الشاشة */
+            padding: 20px;
+            /* ربط صورة الخلفية التي رفعتها */
+            background-image: url('1000286698.jpg'); 
+            background-size: cover; 
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-position: center;
             min-height: 100vh;
         }
         
-        .main-container {
+        .container {
             max-width: 700px;
-            margin: 0 auto;
-            padding: 80px; /* مسافة لتبقى النصوص داخل مساحة الإطار الأسود */
-            color: #d4af37; /* لون ذهبي للنصوص ليتناسب مع الإطار */
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9); /* خلفية شبه شفافة للنص للقراءة بوضوح */
+            border-radius: 15px;
             text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
 
-        h1 { font-size: 3rem; color: #d4af37; }
+        h1 { color: #8b4513; border-bottom: 2px solid #8b4513; display: inline-block; padding-bottom: 10px; }
+        h2 { color: #5c3010; margin-top: 30px; }
         
+        .item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #8b4513; }
+
         .btn { 
-            display: inline-block; background: #d4af37; color: #000; 
+            display: inline-block; background: #8b4513; color: #fff; 
             padding: 10px 25px; text-decoration: none; border-radius: 5px; 
-            margin-top: 20px; font-weight: bold;
+            margin-top: 10px; font-weight: bold;
         }
+        .btn:hover { background: #5c3010; }
     </style>
 </head>
 <body>
 
-    <div class="main-container">
-        <h1>مشروع كيمي</h1>
-        <p>مرحباً بكم في رحاب اللسانيات وتحليل الخطاب.</p>
-        <div class="content">
-            <a href="#" class="btn">تصفح البحوث العلمية</a>
+    <div class="container">
+        <h1>مشروع كيمي - Kimi Project</h1>
+        <p>منصة متخصصة في اللسانيات وتحليل الخطاب</p>
+
+        <h2>البحوث والدروس</h2>
+        
+        <div class="item">
+            <h3>مقاربة في تحليل الخطاب</h3>
+            <p>ملخص البحث العلمي المعتمد على المدارس اللسانية.</p>
+            <a href="research1.pdf" class="btn">تحميل البحث (PDF)</a>
+        </div>
+
+        <div class="item">
+            <h3>تطبيقات في النحو التوليدي</h3>
+            <p>دروس تطبيقية وتمارين في التحليل اللساني.</p>
+            <a href="lesson1.pdf" class="btn">تحميل المحاضرة (PDF)</a>
         </div>
     </div>
 
