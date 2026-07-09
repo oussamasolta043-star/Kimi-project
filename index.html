@@ -8,57 +8,65 @@
         body {
             font-family: 'Amiri', serif;
             margin: 0;
-            padding: 20px;
-            /* تم تحديث الرابط هنا ليتطابق مع اسم ملفك islamic.jpeg */
-            background-image: url('islamic.jpeg'); 
-            background-size: cover; 
+            padding: 0;
+            /* لون خلفية متناسق مع الصورة */
+            background-color: #0b121f; 
+            /* وضع الصورة كخلفية جانبية */
+            background-image: url('تنزيل.jpeg');
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
+            background-position: left center;
+            background-size: contain;
             min-height: 100vh;
+            color: #d4af37;
         }
         
         .container {
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.9); /* خلفية شبه شفافة للنص للقراءة بوضوح */
-            border-radius: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px 20px;
             text-align: center;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
 
-        h1 { color: #8b4513; border-bottom: 2px solid #8b4513; display: inline-block; padding-bottom: 10px; }
-        h2 { color: #5c3010; margin-top: 30px; }
+        h1 { color: #d4af37; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
         
-        .item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #8b4513; }
-
-        .btn { 
-            display: inline-block; background: #8b4513; color: #fff; 
-            padding: 10px 25px; text-decoration: none; border-radius: 5px; 
-            margin-top: 10px; font-weight: bold;
+        .item { 
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #d4af37;
         }
-        .btn:hover { background: #5c3010; }
+
+        /* زر التحميل التفاعلي */
+        .btn { 
+            display: inline-block; 
+            background: #d4af37; 
+            color: #0b121f; 
+            padding: 10px 25px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #f0c950; transform: scale(1.05); }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>مشروع كيمي - Kimi Project</h1>
-        <p>منصة متخصصة في اللسانيات وتحليل الخطاب</p>
+        <h1>مشروع كيمي</h1>
+        <p>منصة متخصصة في تحليل الخطاب واللسانيات</p>
 
-        <h2>البحوث والدروس</h2>
-        
         <div class="item">
             <h3>مقاربة في تحليل الخطاب</h3>
-            <p>ملخص البحث العلمي المعتمد على المدارس اللسانية.</p>
-            <a href="#" class="btn">تحميل البحث (PDF)</a>
+            <p>بحث علمي حول المدارس اللسانية الحديثة.</p>
+            <a href="files/research1.pdf" class="btn" target="_blank">تحميل البحث (PDF)</a>
         </div>
 
         <div class="item">
             <h3>تطبيقات في النحو التوليدي</h3>
-            <p>دروس تطبيقية وتمارين في التحليل اللساني.</p>
-            <a href="#" class="btn">تحميل المحاضرة (PDF)</a>
+            <p>دروس تطبيقية وتمارين تحليلية.</p>
+            <a href="files/lesson1.pdf" class="btn" target="_blank">تحميل المحاضرة (PDF)</a>
         </div>
     </div>
 
