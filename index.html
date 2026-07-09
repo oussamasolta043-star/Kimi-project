@@ -1,112 +1,17 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<title>موقع Kimi Project العلمي</title>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-<style>
-body { font-family: 'Amiri', serif; background: #f4eadd; color: #4a3728; margin: 0; padding: 20px; }
-.container { max-width: 900px; margin: auto; background: #fff; padding: 40px; border: 8px double #8b4513; border-radius: 20px; }
-h1 { text-align: center; color: #8b4513; border-bottom: 2px solid #8b4513; padding-bottom: 10px; }
-h2 { color: #5c3010; background: #fdf5e6; padding: 10px; border-right: 5px solid #d4af37; margin-top: 40px; }
-.section-content { margin-bottom: 20px; }
+**وجدت المشكلة، والحل بسيط:** الفيديوهان معكوسان — أي أن رقم الفيديو الذي وضعناه باسم "الكميت بن زيد" هو في الحقيقة فيديو للحارث بن عباد، والعكس صحيح:
 
-.video-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.video-card {
-  flex: 1 1 340px;
-  max-width: 400px;
-  background: #fdf5e6;
-  border: 2px solid #d4af37;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 3px 10px rgba(139,69,19,0.15);
-}
-.video-card h3 {
-  text-align: center;
-  color: #8b4513;
-  margin: 0 0 10px;
-  font-size: 1.2em;
-  border-bottom: 1px dashed #d4af37;
-  padding-bottom: 8px;
-}
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 6px;
-  border: 1px solid #8b4513;
-}
-.video-wrapper iframe {
-  position: absolute;
-  top: 0; right: 0;
-  width: 100%; height: 100%;
-  border: 0;
-}
-.video-meta {
-  margin-top: 8px;
-  font-size: 0.9em;
-  color: #5c3010;
-  text-align: center;
-}
-</style>
-</head>
-<body>
-<div class="container">
-<h1>مشروع كيمي - Kimi Project</h1>
+- **mOvq3eh2zn0** ← هذا هو فيديو الحارث بن عباد في رثاء ابنه بجير [YouTube](https://youtube.com/embed/mOvq3eh2zn0)
+- **eMAbfJTbizE** ← هذا هو فيديو الكميت بن زيد الأسدي، بعنوان "طربت وما شوقاً إلى البيض أطرب" [YouTube](https://www.youtube.com/watch?v=eMAbfJTbizE)
 
-<section>
-<h2>البحوث والتحليل اللساني</h2>
-<div class="section-content">
-<p>هنا تضع ملخص بحثك الأول مع روابط التحميل.</p>
-<p>هنا تضع ملخص بحثك الثاني وهكذا...</p>
-</div>
-</section>
+هذا (وليس مشكلة تقنية في الكود) هو سبب أن فيديو الحارث بن عباد ظهر بينما لم يظهر فيديو الكميت بشكل صحيح — الأسماء وُضعت على الفيديو الخطأ منذ البداية.
 
-<section>
-<h2>المقالات اللغوية</h2>
-<div class="section-content">
-<p>ضع مقالاتك هنا بتنسيق فقرات مرتبة.</p>
-</div>
-</section>
+**سأصحح هذا الآن في الكود:**
 
-<section>
-<h2>الدروس والتطبيقات</h2>
-<div class="section-content">
-<p>ضع جداول دروسك أو روابط تحميلها هنا.</p>
-</div>
-</section>
+**ماذا الآن:**
+1. افتح الملف المرفق، انسخ الكود كاملاً.
+2. عد إلى GitHub → ملف index.html → Edit.
+3. احذف الكود الحالي والصق الجديد.
+4. اضغط **Commit changes**.
+5. افتح رابط GitHub Pages مجددًا للتأكد أن كل فيديو أصبح تحت اسم الشاعر الصحيح.
 
-<section>
-<h2>فيديوهات القصائد والنصوص الأدبية</h2>
-<div class="section-content">
-<div class="video-grid">
-
-  <div class="video-card">
-    <h3>الكميت بن زيد الأسدي — في مدح الهاشميين</h3>
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/mOvq3eh2zn0" allowfullscreen></iframe>
-    </div>
-    <div class="video-meta">العصر الأموي — الشعر السياسي (الهاشميات)</div>
-  </div>
-
-  <div class="video-card">
-    <h3>الحارث بن عباد</h3>
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/eMAbfJTbizE" allowfullscreen></iframe>
-    </div>
-    <div class="video-meta">العصر الجاهلي</div>
-  </div>
-
-</div>
-</div>
-</section>
-
-</div>
-</body>
-      </html>
+ملاحظة: عنوان قصيدة الكميت الفعلي هو "طربت وما شوقاً إلى البيض أطرب"، وليس بالضرورة من الهاشميات كما افترضنا سابقًا — لذا عدّلت الوصف ليطابق الفيديو الحقيقي. إن كان لديك عنوان أدق للقصيدة، أخبرني لأضبطه.
