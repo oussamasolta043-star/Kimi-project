@@ -2,61 +2,52 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Kimi Project - المنصة العلمية</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <title>مناهل أدبية ونفحات لسانية</title>
     <style>
         body {
-            font-family: 'Amiri', serif;
             margin: 0;
             padding: 0;
-            background-color: #0b121f;
-            /* المسار الصحيح للصورة */
-            background-image: url('background.jpg'); 
+            /* ربط الصورة كما هي دون أي إضافات */
+            background-image: url('cover.jpg'); 
             background-repeat: no-repeat;
-            background-position: left center;
-            background-size: contain;
+            background-position: center center;
+            background-size: cover; /* تغطي الشاشة بالكامل مع الحفاظ على التناسب */
             min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* حاوية الأزرار لتكون فوق الصورة بشكل منسق */
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 200px; /* ضبط المسافة لتكون تحت النص الموجود في الصورة */
+        }
+
+        .btn {
+            background: rgba(0, 0, 0, 0.6);
             color: #d4af37;
-        }
-        
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        h1 { color: #d4af37; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
-        
-        .item { 
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
+            padding: 15px 40px;
+            text-decoration: none;
             border: 1px solid #d4af37;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-align: center;
+            transition: 0.3s;
         }
 
-        .btn { 
-            display: inline-block; 
-            background: #d4af37; 
-            color: #0b121f; 
-            padding: 10px 25px; 
-            text-decoration: none; 
-            border-radius: 5px; 
-            font-weight: bold;
-        }
+        .btn:hover { background: #d4af37; color: #000; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>مشروع كيمي</h1>
-        <p>منصة متخصصة في تحليل الخطاب واللسانيات</p>
-
-        <div class="item">
-            <h3>مقاربة في تحليل الخطاب</h3>
-            <a href="research1.pdf" class="btn">تحميل البحث (PDF)</a>
-        </div>
+    <div class="buttons-container">
+        <a href="linguistics.pdf" class="btn">علم اللسانيات</a>
+        <a href="discourse.pdf" class="btn">تحليل الخطاب</a>
+        <a href="arabic.pdf" class="btn">علم اللغة العربية</a>
+        <a href="studies.pdf" class="btn">مقاربات لغوية</a>
     </div>
 
 </body>
