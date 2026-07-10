@@ -2,39 +2,41 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>مناهل أدبية ونفحات لسانية</title>
+    <title>مشروع الأستاذ الباحث أسامة سلطاني</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            /* ربط الصورة كما هي دون أي إضافات */
-            background-image: url('cover.jpg'); 
+            /* ربط الصورة باسمها الجديد في المستودع */
+            background-image: url('background.jpg'); 
             background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover; /* تغطي الشاشة بالكامل مع الحفاظ على التناسب */
+            background-position: center top;
+            background-size: contain; /* تضمن ظهور الصورة كاملة دون قص */
+            background-color: #000; /* لون أسود لضمان التباين */
             min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
 
-        /* حاوية الأزرار لتكون فوق الصورة بشكل منسق */
         .buttons-container {
+            /* تعديل المسافة من الأعلى لتناسب مكان الأزرار في صورتك */
+            margin-top: 520px; 
             display: flex;
             flex-direction: column;
             gap: 15px;
-            margin-top: 200px; /* ضبط المسافة لتكون تحت النص الموجود في الصورة */
+            width: 100%;
+            max-width: 300px;
         }
 
         .btn {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.4); /* شفافية خفيفة للأزرار */
             color: #d4af37;
-            padding: 15px 40px;
+            padding: 12px;
             text-decoration: none;
             border: 1px solid #d4af37;
-            border-radius: 30px;
-            font-size: 1.2rem;
+            border-radius: 20px;
             text-align: center;
+            font-weight: bold;
             transition: 0.3s;
         }
 
