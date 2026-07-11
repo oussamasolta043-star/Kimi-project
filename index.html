@@ -2,33 +2,36 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>مناهل أدبية ونفحات لسانية</title>
+    <title>مشروع الأستاذ الباحث أسامة سلطاني</title>
     <style>
-        body { margin: 0; background-color: #0b121f; display: flex; justify-content: center; }
-        .container { position: relative; display: inline-block; }
-        .page-img { max-width: 100%; height: auto; display: block; }
+        body {
+            margin: 0;
+            padding: 0;
+            /* ربط الصورة كخلفية للجسم تملأ كامل المساحة */
+            background-image: url('background.png');
+            background-size: 100% 100%; /* تجبر الصورة على ملء الشاشة */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
 
-        /* الأزرار الشفافة التي نضعها فوق الأيقونات */
+        /* الأزرار الشفافة فوق الصورة */
         .hotspot {
             position: absolute;
-            background: rgba(255, 255, 255, 0.1); /* شفافية خفيفة للتأكد من المكان */
-            border: 2px dashed #d4af37;
-            cursor: pointer;
             z-index: 10;
+            /* شفافية مؤقتة لنرى أماكن الأزرار */
+            background: rgba(255, 255, 255, 0.05); 
+            cursor: pointer;
         }
-        .hotspot:hover { background: rgba(212, 175, 55, 0.3); }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="background.png" class="page-img">
-
-        <a href="linguistics.pdf" class="hotspot" style="top: 45%; left: 8%; width: 38%; height: 23%;"></a>
-        <a href="schools.pdf" class="hotspot" style="top: 45%; left: 54%; width: 38%; height: 23%;"></a>
-        <a href="arabic.pdf" class="hotspot" style="top: 72%; left: 8%; width: 38%; height: 23%;"></a>
-        <a href="studies.pdf" class="hotspot" style="top: 72%; left: 54%; width: 38%; height: 23%;"></a>
-    </div>
+    <a href="linguistics.pdf" class="hotspot" style="top: 45%; left: 8%; width: 38%; height: 23%;"></a>
+    <a href="schools.pdf" class="hotspot" style="top: 45%; left: 54%; width: 38%; height: 23%;"></a>
+    <a href="arabic.pdf" class="hotspot" style="top: 72%; left: 8%; width: 38%; height: 23%;"></a>
+    <a href="studies.pdf" class="hotspot" style="top: 72%; left: 54%; width: 38%; height: 23%;"></a>
 
 </body>
 </html>
