@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <title>مناهل أدبية ونفحات لسانية - أ. أسامة سلطاني</title>
     <style>
-        body { margin: 0; padding: 0; display: flex; justify-content: center; background-color: #0b121f; }
-        .container { position: relative; width: 100%; max-width: 700px; }
-        .page-img { width: 100%; height: auto; display: block; }
-        .hotspot { position: absolute; z-index: 10; cursor: pointer; }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            background-color: #0b121f; 
+        }
+        
+        /* هنا قمنا بزيادة العرض إلى 900px */
+        .container { 
+            position: relative; 
+            width: 100%; 
+            max-width: 900px; 
+        }
+        
+        .page-img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+        }
+
+        .hotspot { 
+            position: absolute; 
+            z-index: 10; 
+            cursor: pointer; 
+        }
+
+        /* هذا التعديل يجعل أي نصوص داخل المنصة سميكة جداً */
+        body, h1, h2, p {
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
