@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('background.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #0b121f;
-            height: 100vh;
-        }
-    </style>
-</head>
-<body>
-    </body>
-</html>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        /* المسار الذي يعمل حالياً معك */
+        background-image: url('background.png');
+        
+        /* الأوامر التي ستجعل الصورة تغطي كامل الشاشة */
+        background-size: 100% 100%; /* تمدد الصورة لتملأ العرض والطول */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
