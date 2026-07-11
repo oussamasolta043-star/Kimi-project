@@ -1,22 +1,35 @@
-<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-    }
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; background-color: #0b121f; }
+        
+        /* الحاوية تحافظ على الصورة كاملة */
+        .container { position: relative; width: 100%; max-width: 600px; }
+        
+        /* الصورة تظهر كاملة وبأبعادها الصحيحة */
+        .page-img { width: 100%; height: auto; display: block; }
 
-    body {
-        background-image: url('background.png');
-        /* الحفاظ على أبعاد الصورة مع تغطية كامل المساحة */
-        background-size: cover; 
-        /* وضع الصورة في المنتصف دائماً */
-        background-position: center center;
-        /* منع تكرار الصورة */
-        background-repeat: no-repeat;
-        /* تثبيت الخلفية عند التمرير */
-        background-attachment: fixed;
-        /* لون خلفية يظهر في حال كان هناك أي فراغ */
-        background-color: #0b121f; 
-    }
-</style>
+        /* الأزرار الشفافة */
+        .hotspot {
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            /* أزل border أو background إذا أردت إخفاء الإطار نهائياً */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="background.png" class="page-img">
+
+        <a href="section1.html" class="hotspot" style="top: 45%; left: 10%; width: 35%; height: 20%;"></a>
+        <a href="section2.html" class="hotspot" style="top: 45%; left: 55%; width: 35%; height: 20%;"></a>
+        <a href="section3.html" class="hotspot" style="top: 75%; left: 10%; width: 35%; height: 20%;"></a>
+        <a href="section4.html" class="hotspot" style="top: 75%; left: 55%; width: 35%; height: 20%;"></a>
+    </div>
+
+</body>
+</html>
