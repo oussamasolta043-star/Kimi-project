@@ -2,54 +2,32 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>مشروع الأستاذ الباحث أسامة سلطاني</title>
+    <title>مناهل أدبية ونفحات لسانية</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            /* ربط الصورة باسمها الجديد في المستودع */
-            background-image: url('background.jpg'); 
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain; /* تضمن ظهور الصورة كاملة دون قص */
-            background-color: #000; /* لون أسود لضمان التباين */
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-        }
+        body { margin: 0; background-color: #0b121f; display: flex; justify-content: center; }
+        .container { position: relative; display: inline-block; }
+        .page-img { max-width: 100%; height: auto; display: block; }
 
-        .buttons-container {
-            /* تعديل المسافة من الأعلى لتناسب مكان الأزرار في صورتك */
-            margin-top: 520px; 
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
-            max-width: 300px;
+        /* الأزرار الشفافة التي نضعها فوق الأيقونات */
+        .hotspot {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1); /* شفافية خفيفة للتأكد من المكان */
+            border: 2px dashed #d4af37;
+            cursor: pointer;
+            z-index: 10;
         }
-
-        .btn {
-            background: rgba(0, 0, 0, 0.4); /* شفافية خفيفة للأزرار */
-            color: #d4af37;
-            padding: 12px;
-            text-decoration: none;
-            border: 1px solid #d4af37;
-            border-radius: 20px;
-            text-align: center;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover { background: #d4af37; color: #000; }
+        .hotspot:hover { background: rgba(212, 175, 55, 0.3); }
     </style>
 </head>
 <body>
 
-    <div class="buttons-container">
-        <a href="linguistics.pdf" class="btn">علم اللسانيات</a>
-        <a href="discourse.pdf" class="btn">تحليل الخطاب</a>
-        <a href="arabic.pdf" class="btn">علم اللغة العربية</a>
-        <a href="studies.pdf" class="btn">مقاربات لغوية</a>
+    <div class="container">
+        <img src="background.png" class="page-img">
+
+        <a href="linguistics.pdf" class="hotspot" style="top: 45%; left: 8%; width: 38%; height: 23%;"></a>
+        <a href="schools.pdf" class="hotspot" style="top: 45%; left: 54%; width: 38%; height: 23%;"></a>
+        <a href="arabic.pdf" class="hotspot" style="top: 72%; left: 8%; width: 38%; height: 23%;"></a>
+        <a href="studies.pdf" class="hotspot" style="top: 72%; left: 54%; width: 38%; height: 23%;"></a>
     </div>
 
 </body>
