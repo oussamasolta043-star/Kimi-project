@@ -2,42 +2,19 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>مشروع الأستاذ الباحث أسامة سلطاني</title>
     <style>
-        /* إعداد الصفحة لتأخذ كامل مساحة الشاشة */
-        html, body {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden; /* لمنع ظهور أشرطة التمرير غير الضرورية */
-        }
-
-        body {
-            /* وضع الصورة كخلفية */
             background-image: url('background.png');
-            background-size: cover; /* تغطية كامل المساحة */
-            background-position: center center;
+            background-size: contain;
             background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        /* حاوية الأزرار الشفافة التي ستوضع فوق الأيقونات */
-        .hotspot {
-            position: absolute;
-            z-index: 10;
-            cursor: pointer;
-            /* شفافية مؤقتة (يمكنك تغييرها إلى 0 لإخفاء الحدود تماماً) */
-            background: rgba(255, 255, 255, 0.0);
+            background-position: center;
+            background-color: #0b121f;
+            height: 100vh;
         }
     </style>
 </head>
 <body>
-
-    <a href="section1.html" class="hotspot" style="top: 48%; left: 8%; width: 40%; height: 23%;"></a>
-    <a href="section2.html" class="hotspot" style="top: 48%; left: 52%; width: 40%; height: 23%;"></a>
-    <a href="section3.html" class="hotspot" style="top: 76%; left: 8%; width: 40%; height: 23%;"></a>
-    <a href="section4.html" class="hotspot" style="top: 76%; left: 52%; width: 40%; height: 23%;"></a>
-
-</body>
+    </body>
 </html>
