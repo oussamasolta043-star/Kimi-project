@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <title>مشروع الأستاذ الباحث أسامة سلطاني</title>
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
-            /* ربط الصورة كخلفية للجسم تملأ كامل المساحة */
-            background-image: url('background.png');
-            background-size: 100% 100%; /* تجبر الصورة على ملء الشاشة */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            min-height: 100vh;
+            height: 100%; /* تأكيد على أخذ كامل ارتفاع المتصفح */
+            width: 100%;  /* تأكيد على أخذ كامل عرض المتصفح */
         }
 
-        /* الأزرار الشفافة فوق الصورة */
+        body {
+            /* استخدمنا اسم الملف الجديد .png */
+            background-image: url('1000287140.png');
+            background-size: cover; /* تجعل الصورة تغطي كامل المساحة دون فراغات */
+            background-position: center center; /* توسيط الصورة في المنتصف */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* تنسيق الأزرار الشفافة فوق الأيقونات */
         .hotspot {
             position: absolute;
             z-index: 10;
-            /* شفافية مؤقتة لنرى أماكن الأزرار */
-            background: rgba(255, 255, 255, 0.05); 
             cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <a href="linguistics.pdf" class="hotspot" style="top: 45%; left: 8%; width: 38%; height: 23%;"></a>
-    <a href="schools.pdf" class="hotspot" style="top: 45%; left: 54%; width: 38%; height: 23%;"></a>
-    <a href="arabic.pdf" class="hotspot" style="top: 72%; left: 8%; width: 38%; height: 23%;"></a>
-    <a href="studies.pdf" class="hotspot" style="top: 72%; left: 54%; width: 38%; height: 23%;"></a>
+    <a href="section1.html" class="hotspot" style="top: 48%; left: 8%; width: 40%; height: 23%;"></a>
+    <a href="section2.html" class="hotspot" style="top: 48%; left: 52%; width: 40%; height: 23%;"></a>
+    <a href="section3.html" class="hotspot" style="top: 76%; left: 8%; width: 40%; height: 23%;"></a>
+    <a href="section4.html" class="hotspot" style="top: 76%; left: 52%; width: 40%; height: 23%;"></a>
 
 </body>
 </html>
