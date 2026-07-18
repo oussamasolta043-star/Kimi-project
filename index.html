@@ -2,50 +2,90 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>مناهل أدبية ونفحات لسانية - أ. أسامة سلطاني</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الأستاذ أسامة سلطاني - للعلوم اللسانية</title>
     <style>
-        body { 
-            margin: 0; 
-            padding: 0; 
-            display: flex; 
-            justify-content: center; 
-            background-color: #0b121f; 
-        }
-        
-        /* هنا قمنا بزيادة العرض إلى 900px */
-        .container { 
-            position: relative; 
-            width: 100%; 
-            max-width: 900px; 
-        }
-        
-        .page-img { 
-            width: 100%; 
-            height: auto; 
-            display: block; 
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #050505;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        .hotspot { 
-            position: absolute; 
-            z-index: 10; 
-            cursor: pointer; 
+        .container {
+            margin-top: 100px;
+            width: 90%;
+            max-width: 500px;
         }
 
-        /* هذا التعديل يجعل أي نصوص داخل المنصة سميكة جداً */
-        body, h1, h2, p {
-            font-weight: 900;
+        /* تنسيق البطاقة الزجاجية */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 { color: #d4af37; margin-bottom: 20px; }
+
+        /* تنسيق خانة البحث */
+        .search-box {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #d4af37;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        /* تنسيق الأزرار */
+        .btn {
+            display: block;
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            padding: 15px;
+            margin: 10px 0;
+            text-decoration: none;
+            border: 1px solid #d4af37;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.4s;
+        }
+
+        .btn:hover {
+            background: #d4af37;
+            color: #000;
+            transform: scale(1.02);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="background.png" class="page-img">
+        <div class="glass-card">
+            <h1>المنصة العلمية</h1>
+            
+            <!-- خانة بحث عامة -->
+            <input type="text" class="search-box" placeholder="ابحث في علوم اللسانيات والخطاب...">
 
-        <a href="section1.html" class="hotspot" style="top: 45%; left: 8%; width: 38%; height: 23%;"></a>
-        <a href="section2.html" class="hotspot" style="top: 45%; left: 54%; width: 38%; height: 23%;"></a>
-        <a href="section3.html" class="hotspot" style="top: 72%; left: 8%; width: 38%; height: 23%;"></a>
-        <a href="section4.html" class="hotspot" style="top: 72%; left: 54%; width: 38%; height: 23%;"></a>
+            <!-- الأبواب العلمية -->
+            <a href="linguistics.pdf" class="btn">🔬 علم اللسانيات</a>
+            <a href="discourse.pdf" class="btn">💬 تحليل الخطاب</a>
+            <a href="arabic.pdf" class="btn">📖 علم اللغة العربية</a>
+            <a href="studies.pdf" class="btn">📜 مقاربات لغوية</a>
+        </div>
     </div>
 
 </body>
