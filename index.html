@@ -4,50 +4,31 @@
     <meta charset="UTF-8">
     <title>منصة الأستاذ التعليمية</title>
     <style>
-        body { margin: 0; padding: 0; background-color: #000; color: #d4af37; font-family: Arial, sans-serif; text-align: center; }
-        
-        /* واجهة الفيديو */
-        #splash-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; background: #000; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-        video { width: 100%; height: 100%; object-fit: cover; }
-
-        /* الأبواب */
-        #main-content { padding: 50px; }
-        .doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
-        .door { padding: 30px; border: 2px solid #d4af37; color: #d4af37; text-decoration: none; font-size: 18px; border-radius: 10px; transition: 0.3s; }
-        .door:hover { background-color: #d4af37; color: #000; }
+        body { background-color: #000; color: #d4af37; font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h1 { margin-bottom: 40px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 10px; }
+        .doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .door { padding: 30px; border: 2px solid #d4af37; color: #d4af37; text-decoration: none; font-size: 18px; border-radius: 10px; transition: 0.3s; display: block; }
+        .door:hover { background-color: #d4af37; color: #000; cursor: pointer; }
     </style>
 </head>
 <body>
 
-    <!-- الواجهة الأمامية (الفيديو) -->
-    <div id="splash-screen">
-        <video autoplay muted onended="showContent()">
-            <source src="video.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <!-- المحتوى (الأبواب) -->
-    <div id="main-content">
-        <h1>مرحباً بك في منصة الأستاذ</h1>
-        <div class="doors" id="doors-container">
-            <!-- هنا ستظهر الكتب تلقائياً -->
-        </div>
+    <h1>مرحباً بك في منصة الأستاذ</h1>
+    <div class="doors" id="doors-container">
+        <!-- سيتم إضافة الكتب هنا تلقائياً -->
     </div>
 
     <script>
-        function showContent() {
-            document.getElementById('splash-screen').style.display = 'none';
-        }
-
-        // هنا نضع أسماء ملفاتك (عدلها حسب أسماء ملفاتك)
-        const books = ["Book-1.pdf", "Book-2.pdf", "Book-3.pdf", "Book-4.pdf"];
-        const container = document.getElementById('doors-container');
+        // ضع أسماء ملفاتك هنا بدقة (تأكد من مطابقة الحروف والرموز)
+        const books = ["Book-1.pdf", "Book-2.pdf", "Book-3.pdf", "Book-4.pdf"]; 
         
+        const container = document.getElementById('doors-container');
         books.forEach((book, index) => {
             const link = document.createElement('a');
             link.href = book;
             link.className = 'door';
-            link.innerText = 'الكتاب رقم ' + (index + 1);
+            link.innerText = 'الكتاب / المحاضرة رقم ' + (index + 1);
+            link.target = "_blank"; // لفتح الملف في صفحة جديدة
             container.appendChild(link);
         });
     </script>
