@@ -2,36 +2,24 @@
 <html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>منصة الأستاذ التعليمية</title>
+    <title>منصة الأستاذ</title>
     <style>
-        body { background-color: #000; color: #d4af37; font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { margin-bottom: 40px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 10px; }
-        .doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .door { padding: 30px; border: 2px solid #d4af37; color: #d4af37; text-decoration: none; font-size: 18px; border-radius: 10px; transition: 0.3s; display: block; }
-        .door:hover { background-color: #d4af37; color: #000; cursor: pointer; }
+        body { background-color: #000; color: #d4af37; font-family: sans-serif; text-align: center; padding: 20px; }
+        .section-title { margin-top: 30px; border-bottom: 1px solid #d4af37; display: inline-block; }
+        .door { display: block; padding: 15px; margin: 10px auto; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; width: 80%; max-width: 400px; border-radius: 5px; }
+        .door:hover { background-color: #d4af37; color: #000; }
     </style>
 </head>
 <body>
+    <h1>مكتبة الكتب والمحاضرات</h1>
 
-    <h1>مرحباً بك في منصة الأستاذ</h1>
-    <div class="doors" id="doors-container">
-        <!-- سيتم إضافة الكتب هنا تلقائياً -->
-    </div>
-
-    <script>
-        // ضع أسماء ملفاتك هنا بدقة (تأكد من مطابقة الحروف والرموز)
-        const books = ["Book-1.pdf", "Book-2.pdf", "Book-3.pdf", "Book-4.pdf"]; 
-        
-        const container = document.getElementById('doors-container');
-        books.forEach((book, index) => {
-            const link = document.createElement('a');
-            link.href = book;
-            link.className = 'door';
-            link.innerText = 'الكتاب / المحاضرة رقم ' + (index + 1);
-            link.target = "_blank"; // لفتح الملف في صفحة جديدة
-            container.appendChild(link);
-        });
-    </script>
-
+    <!-- يمكنك إضافة روابط ملفاتك هنا يدوياً، وهي أسرع طريقة ومضمونة 100% -->
+    <a href="Book-13.pdf" class="door">الكتاب 13</a>
+    <a href="Book-14.pdf" class="door">الكتاب 14</a>
+    <!-- استمر في إضافة الأسطر حسب ملفاتك -->
+    <a href="Book-19.pdf" class="door">الكتاب 19</a>
+    <a href="Book-Second-Name.pdf" class="door">اسم الكتاب الثاني</a>
+    
+    <p>ملاحظة: تأكد أن الأسماء داخل href="..." تطابق تماماً أسماء ملفاتك في المجلد.</p>
 </body>
 </html>
